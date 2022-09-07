@@ -1,10 +1,11 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Route, Switch } from "react-router-dom"
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
 import Contact from './Components/Contact';
-import Comments from './Components/Comments';
+// import Comments from './Components/Comments';
+// import CustomerReview from './Components/CustomerReview';
 
 function App() {
   return (
@@ -18,10 +19,15 @@ function App() {
         <Route exact path="/contactUs">
           <Contact />
         </Route>
+        {/* <Route exact path="/comment">
         <Comments  />
+        </Route>
+        <Route exact path="/customerReview">
+        <CustomerReview />
+        </Route> */}
       </Switch>
     </div>
-  );
+  )
 }
 
 export default App;

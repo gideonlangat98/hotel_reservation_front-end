@@ -1,12 +1,10 @@
-// import React from 'react'
+import React from 'react'
 
-// function Comments({comment}) {
-//   return (
-//     <div className='comment-list'>
-      
-        
-//     </div>
-//   )
-// }
+function Comments() {
+  return (
+    <div className='comment-list'>
+    </div>
+  )
+}
 
-// export default Comments;
+export default Comments;

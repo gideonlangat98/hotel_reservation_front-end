@@ -19,8 +19,12 @@ function NavBar(){
                     Home
                 </NavLink>
 
-                <NavLink to="/aboutUs" style={navLinks}>
-                    About
+                {/* <NavLink to="comment" style={navLinks}>
+                    Comments
+                </NavLink> */}
+
+                <NavLink to="customerReviews" style={navLinks}>
+                    Reviews
                 </NavLink>
 
                 <NavLink to="contactUs" style={navLinks}>
