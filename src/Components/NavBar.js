@@ -18,11 +18,6 @@ function NavBar(){
                 <NavLink to="/" style={navLinks}>
                     Home
                 </NavLink>
-
-                {/* <NavLink to="comment" style={navLinks}>
-                    Comments
-                </NavLink> */}
-
                 <NavLink to="customerReviews" style={navLinks}>
                     Reviews
                 </NavLink>
