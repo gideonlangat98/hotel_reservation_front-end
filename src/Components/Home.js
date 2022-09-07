@@ -26,6 +26,10 @@ function Home() {
     const allReviews = reviews.map((review) => {
       return <Contact key={review.id} body={review.body} />
     })
+
+    function handleAddReview(newReview) {
+      setReviews([...reviews, newReview]);
+    }
     
     return (
       <div>
@@ -39,6 +43,7 @@ function Home() {
             ))}
           </h1>
           {allReviews}
+          <NewReview onAddReview={handleAddReview}/>
       </div>
     )
   }
