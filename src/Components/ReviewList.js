@@ -1,16 +1,10 @@
-import React from 'react'
-import Review from './Review';
+// import React from 'react'
 
-function ReviewList({onReviewDelete}) {
-  return (
-    <div>
-        <ul>
-            {ReviewList.map((review) =>(
-                <Review key={review.id} onReviewDelete={onReviewDelete} />
-            ))}
-        </ul>
-    </div>
-  );
-}
+// function ReviewList() {
+//   return (
+//     <div>
+//     </div>
+//   );
+// }
 
-export default ReviewList;
+// export default ReviewList;

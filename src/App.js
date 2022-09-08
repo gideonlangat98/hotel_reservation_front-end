@@ -5,7 +5,9 @@ import NavBar from './Components/NavBar';
 import Home from './Components/Home';
 import Contact from './Components/Contact';
 import CustomerReview from './Components/CustomerReview';
-import Review from './Components/Review';
+// import EditReview from './Components/EditReview';
+// import ReviewList from './Components/ReviewList';
+import Review from './Components/Review'
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         <Route exact path="/customerReviews">
         <CustomerReview />
         </Route>
+        {/* <EditReview /> */}
+        {/* <ReviewList /> */}
+        <Review />
       </Switch>
     </div>
   )

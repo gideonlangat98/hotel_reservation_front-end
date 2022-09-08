@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NewReview from './NewReview';
-import ReviewList from './ReviewList';
+import Review from './Review';
 
 function CustomerReview() {
   const [reviews, setReviews] = useState([]);
@@ -13,25 +13,31 @@ function CustomerReview() {
     })
   },[]);
 
+
   function handleAddReview(newReview) {
     setReviews([...reviews, newReview]);
   }
 
-  function handleDeleteReview(id){
-    const updatedReviews = reviews.filter((review) => review.id !== id)
+  function handleDeleteReview(deletedReview){
+    const updatedReviews = reviews.filter((review) => review.id !== deletedReview.id)
+    setReviews(updatedReviews)
   }
 
-  const showReview = reviews.map((review) =>(
-    <ol key={review.id}>
-      <p>comment:{review.body}</p>
-    </ol>
-  ))
+  // const showReview = reviews.map((review) =>(
+  //   <ol key={review.id}>
+  //    Comment:{review.body}
+  //    <button onClick={() => handleDeleteReview(review.id)}>Del Rev</button>
+  //   </ol>
+  // ))
   
   return (
     <div>
-      {showReview}
+      <ul className="Reviews">
+        {reviews.map((review) => (
+          <Review id={review.id} key={review.id} review={review}  onDelete={handleDeleteReview} />
+        ))}
+      </ul>
       <NewReview onAddReview={handleAddReview}/>
-      <ReviewList onReviewDelete={handleDeleteReview}/>
     </div>
   )
 }
