@@ -3,16 +3,15 @@ import React, { useState, useEffect } from 'react'
 function Home() {
     const [hotels, setHotels] = useState([]);
     
-  
-  
     useEffect(() => {
       fetch("http://localhost:9292/hotels")
       .then((response) => response.json())
-      .then((json) =>{
-        setHotels(json)
-        console.log(json)
+      .then((data) =>{
+        setHotels(data)
+        console.log(data)
       })
     },[]);
+
     
     return (
       <div>

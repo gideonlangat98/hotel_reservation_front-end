@@ -15,17 +15,18 @@ function CustomerReview() {
   function handleAddReview(newReview) {
     setReviews([...reviews, newReview]);
   }
+
+
+  const showReview = reviews.map((review) =>(
+    <ol key={review.id}>
+      <p>comment:{review.body}</p>
+    </ol>
+  ))
   
   return (
     <div>
-      <ul>
-            {reviews.map((review) =>(
-              <ol id={review.id} key={review.id}>
-                <p>comment:{review.body}</p>
-              </ol>
-            ))}
-          </ul>
-          <NewReview onAddReview={handleAddReview}/>
+      {showReview}
+      <NewReview onAddReview={handleAddReview}/>
     </div>
   )
 }
