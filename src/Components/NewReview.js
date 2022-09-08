@@ -1,7 +1,13 @@
 import React, { useState } from 'react'
 
 function NewReview({onAddReview}) {
-    const [body, setBody] = useState("")
+    const [reviewBody, setReviewBody] = useState({
+        body: ""
+    })
+
+    function handleChange(e){
+        setReviewBody({...reviewBody, [e.target.name]:e.target.value})
+    }
 
     function handleSubmit(e){
         e.preventDefault();
@@ -9,32 +15,31 @@ function NewReview({onAddReview}) {
         fetch("http://localhost:9292/reviews", {
             method: "POST",
             headers: {
-                'Content-Type': "application/json"
+                'Content-Type':"application/json",
             },
-            body: JSON.stringify({
-                body: body
-            }),
-        })
-            .then((response) => response.json)
-            .then((newReview) => {
-                onAddReview(newReview);
-                setBody("")
-            });
-    }
+            body: JSON.stringify({body:reviewBody.body})
+    })
+           .then(response => response.json())
+           .then((data) => {
+           onAddReview(data);
+           setReviewBody({...reviewBody, body:""})
+    })
+}
+    
   return (
     <div>
         <form className='review-form' onSubmit={handleSubmit}>
             <input 
             type="text"
             name="body"
-            autoComplete='off'
-            value={body}
-            onChange={(e) => setBody(e.target.value)}
+            placeholder='body'
+            value={reviewBody.body}
+            onChange={handleChange}
             />
-            <button type={submit}>Send Review</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
   );
 }
 
-export default NewReview
+export default NewReview;

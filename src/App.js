@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/contactUs">
           <Contact />
         </Route>
-        <Route exact path="/customerReview">
+        <Route exact path="/customerReviews">
         <CustomerReview />
         </Route>
       </Switch>

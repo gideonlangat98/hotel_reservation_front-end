@@ -1,9 +1,8 @@
 import React from 'react'
 
-function Contact({body}) {
+function Contact() {
   return (
     <div>
-      <li>{body}</li>
     </div>
   )
 }

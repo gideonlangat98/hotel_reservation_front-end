@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import Contact from './Contact';
 
 function Home() {
     const [hotels, setHotels] = useState([]);
-    const [reviews, setReviews] = useState([]);
+    
   
   
     useEffect(() => {
@@ -14,36 +13,18 @@ function Home() {
         console.log(json)
       })
     },[]);
-
-    useEffect(() => {
-      fetch("http://localhost:9292/reviews")
-      .then((response) => response.json())
-      .then((data) =>{
-        setReviews(data)
-      })
-    },[]);
-    
-    const allReviews = reviews.map((review) => {
-      return <Contact key={review.id} body={review.body} />
-    })
-
-    function handleAddReview(newReview) {
-      setReviews([...reviews, newReview]);
-    }
     
     return (
       <div>
-          <h1>
+          <header>
             { hotels.map((hotel) => (
-                <ol key={hotel.id} >
-                Name: {hotel.name},
-                Location: {hotel.location},
-                Price: {hotel.price}
+                <ol id={hotel.id} key={hotel.id} >
+                <p>Name: {hotel.name}</p>
+                <p>Location:{hotel.location}</p>
+                <p>Price: {hotel.price}</p>
                 </ol>
             ))}
-          </h1>
-          {allReviews}
-          <NewReview onAddReview={handleAddReview}/>
+          </header>
       </div>
     )
   }
