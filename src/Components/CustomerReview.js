@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NewReview from './NewReview';
+import ReviewList from './ReviewList';
 
 function CustomerReview() {
   const [reviews, setReviews] = useState([]);
@@ -16,6 +17,9 @@ function CustomerReview() {
     setReviews([...reviews, newReview]);
   }
 
+  function handleDeleteReview(id){
+    const updatedReviews = reviews.filter((review) => review.id !== id)
+  }
 
   const showReview = reviews.map((review) =>(
     <ol key={review.id}>
@@ -27,6 +31,7 @@ function CustomerReview() {
     <div>
       {showReview}
       <NewReview onAddReview={handleAddReview}/>
+      <ReviewList onReviewDelete={handleDeleteReview}/>
     </div>
   )
 }

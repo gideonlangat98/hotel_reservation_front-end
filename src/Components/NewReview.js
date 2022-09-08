@@ -24,14 +24,11 @@ function NewReview({onAddReview}) {
            onAddReview(data)
            setFormData({...formData,body:""})
     })
-}
-    
+}  
   return (
     <div>
         <form className='review-form' onSubmit={handleSubmit}>
             <input type="text" name="body" placeholder='body' value={formData.body} onChange={handleChange} />
-            {/* <input type="text" name="price" placeholder='price' value={formData.price} onChange={handleChange} />
-            <input type="text" name="location" placeholder='location' value={formData.location} onChange={handleChange} /> */}
             <button type="submit">Submit</button>
         </form>
     </div>

@@ -5,6 +5,7 @@ import NavBar from './Components/NavBar';
 import Home from './Components/Home';
 import Contact from './Components/Contact';
 import CustomerReview from './Components/CustomerReview';
+import Review from './Components/Review';
 
 function App() {
   return (
