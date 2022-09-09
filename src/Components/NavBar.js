@@ -23,7 +23,7 @@ function NavBar(){
                 </NavLink>
 
                 <NavLink to="contactUs" style={navLinks}>
-                    Contact Us
+                    Contact us
                 </NavLink>
             </div>
         </div>

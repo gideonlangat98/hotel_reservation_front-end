@@ -14,7 +14,6 @@ function Home() {
     //     console.log(data)
     //   })
     // },[]);
-
     
     return (
       <div className='bg-page'>
@@ -24,7 +23,7 @@ function Home() {
           <p>Welcome to ReelWorld. <br></br>ReelWorld hotel 5 minutes by car from Nairobi CBD. <br></br>it offers free WIFI and parking.</p>
         </div>
         <div>
-        <img src={hotel} alt="hotel1" className="hotel1" style={{width: "850px", height: "600px", marginLeft: "3rem"}}/>
+          <img src={hotel} alt="hotel1" className="hotel1" style={{width: "850px", height: "600px", marginLeft: "3rem"}}/>
         </div>
         </div>
           <header>

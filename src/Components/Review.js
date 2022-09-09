@@ -16,10 +16,14 @@ function Review({review, onDelete}) {
   //   onUpdateBody(updatedReview);
   // }
   return (
-    <li>
-      <span>{review.body}</span>
-      <button className="remove" onClick={handleDeleteClick} className="del">Delete</button>
-    </li>
+    <div className='rev'>
+      <div>
+      <span className='body'>{review.body}</span>
+      </div>
+      <div>
+      <button onClick={handleDeleteClick} className="del">Delete</button>
+    </div>
+    </div>
   )
 }
 

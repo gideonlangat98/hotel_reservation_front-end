@@ -31,7 +31,7 @@ function CustomerReview() {
   // ))
   
   return (
-    <div>
+    <div className='cust-rev'>
       <ul className="Reviews">
         {reviews.map((review) => (
           <Review id={review.id} key={review.id} review={review}  onDelete={handleDeleteReview} />
