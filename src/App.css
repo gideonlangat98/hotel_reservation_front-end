@@ -3,3 +3,7 @@
     border-bottom-color:crimson;
     margin-bottom: 3rem;
 }
+
+.intro{
+    display: flex;
+}
