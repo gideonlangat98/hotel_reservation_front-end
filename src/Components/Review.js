@@ -18,7 +18,7 @@ function Review({review, onDelete}) {
   return (
     <li>
       <span>{review.body}</span>
-      <button className="remove" onClick={handleDeleteClick}>Delete</button>
+      <button className="remove" onClick={handleDeleteClick} className="del">Delete</button>
     </li>
   )
 }

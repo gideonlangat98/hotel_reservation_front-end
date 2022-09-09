@@ -1,28 +1,30 @@
 import React, { useState, useEffect } from 'react'
 import hotel from "../images/hotel1.jpg"
+import hotel2 from "../images/hotel2.jpg"
 
 
 function Home() {
     const [hotels, setHotels] = useState([]);
     
-    useEffect(() => {
-      fetch("http://localhost:9292/hotels")
-      .then((response) => response.json())
-      .then((data) =>{
-        setHotels(data)
-        console.log(data)
-      })
-    },[]);
+    // useEffect(() => {
+    //   fetch("http://localhost:9292/hotels")
+    //   .then((response) => response.json())
+    //   .then((data) =>{
+    //     setHotels(data)
+    //     console.log(data)
+    //   })
+    // },[]);
 
     
     return (
-      <div>
+      <div className='bg-page'>
         <div className='intro'>
-        <div>
-          Welcome to ReelWorld. ReelWorld hotel 5 minutes by car from Nairobi CBD. it offers free WIFI and parking.
+        <div className='p-home'>
+          <img src={hotel2} alt="hotel2" className='hotel2' style={{width: "400px", height: "350px"}}/>
+          <p>Welcome to ReelWorld. <br></br>ReelWorld hotel 5 minutes by car from Nairobi CBD. <br></br>it offers free WIFI and parking.</p>
         </div>
         <div>
-        <img src={hotel} alt="hotel1" className="hotel1" style={{width: "700px", height: "700px"}}/>
+        <img src={hotel} alt="hotel1" className="hotel1" style={{width: "850px", height: "600px", marginLeft: "3rem"}}/>
         </div>
         </div>
           <header>
