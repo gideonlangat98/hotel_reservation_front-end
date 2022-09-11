@@ -3,10 +3,9 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom"
 import NavBar from './Components/NavBar';
 import Home from './Components/Home';
-import Contact from './Components/Contact';
+import About from './Components/About';
 import CustomerReview from './Components/CustomerReview';
-// import EditReview from './Components/EditReview';
-// import ReviewList from './Components/ReviewList';
+import NewReview from './Components/NewReview';
 import Review from './Components/Review'
 
 function App() {
@@ -17,15 +16,13 @@ function App() {
         <Route exact path="/" >
           <Home />
         </Route>
-     
-        <Route exact path="/contactUs">
-          <Contact />
+        <Route exact path="/aboutUs">
+          <About />
         </Route>
         <Route exact path="/customerReviews">
         <CustomerReview />
         </Route>
-        {/* <EditReview /> */}
-        {/* <ReviewList /> */}
+        <NewReview />
         <Review />
       </Switch>
     </div>

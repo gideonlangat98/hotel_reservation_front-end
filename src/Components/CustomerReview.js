@@ -6,7 +6,7 @@ function CustomerReview() {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:9292/reviews")
+    fetch("https://hotel-backend-app.herokuapp.com/reviews")
     .then((response) => response.json())
     .then((data) =>{
       setReviews(data)
@@ -32,6 +32,7 @@ function CustomerReview() {
   
   return (
     <div className='cust-rev'>
+      <h3>Our Customer Reviews</h3>
       <ul className="Reviews">
         {reviews.map((review) => (
           <Review id={review.id} key={review.id} review={review}  onDelete={handleDeleteReview} />

@@ -22,8 +22,8 @@ function NavBar(){
                     Reviews
                 </NavLink>
 
-                <NavLink to="contactUs" style={navLinks}>
-                    Contact us
+                <NavLink to="aboutUs" style={navLinks}>
+                    About us
                 </NavLink>
             </div>
         </div>

@@ -35,7 +35,15 @@ function Home() {
                 </ol>
             ))}
           </header>
-      </div>
+          <div className='footer'>
+            <h3>
+              My Footer
+            </h3>
+          </div>
+          <div>
+            <p>Copy</p>
+          </div>
+    </div>
     )
   }
 

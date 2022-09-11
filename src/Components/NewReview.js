@@ -27,8 +27,9 @@ function NewReview({onAddReview}) {
 }  
   return (
     <div>
+        <p style={{marginLeft:"50px"}}>Add Your Review</p>
         <form className='review-form' onSubmit={handleSubmit}>
-            <input className="input" type="text" name="body" placeholder='Add Your Comment' value={formData.body} onChange={handleChange} />
+            <input className="input" type="text" name="body" placeholder='Add Your Comment...' value={formData.body} onChange={handleChange} />
             <button type="submit" className='submit'>Submit</button>
         </form>
     </div>

@@ -4,7 +4,7 @@ function Review({review, onDelete}) {
     
 
   function handleDeleteClick() {
-    fetch(`http://localhost:9292/reviews/${review.id}`, {
+    fetch(`https://hotel-backend-app.herokuapp.com/reviews/${review.id}`, {
       method: "DELETE",
     })
       .then((resp) => resp.json())

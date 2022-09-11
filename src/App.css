@@ -39,7 +39,7 @@
     background-size: cover;
     padding-top: 2px;
     padding-bottom: 2rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
     padding-right: 10px;
 }
 
@@ -67,4 +67,21 @@
 .cust-rev{
     background-color: rgb(220, 222, 228);
     padding-bottom: 2rem;
+}
+
+.cust-rev h3{
+    color: green;
+    font-size: 25px;
+    margin-left: 40px;
+    padding-top: 1rem;
+}
+
+.footer{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    border-top-color: green;
+    border-bottom-color: transparent;
+    background: rgb(180, 141, 216);
+    padding-bottom: 4rem;
+    padding-top: 1rem;
 }
