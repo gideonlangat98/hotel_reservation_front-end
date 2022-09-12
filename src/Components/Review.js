@@ -15,7 +15,7 @@ function Review({review, onDelete}) {
   return (
     <div className='rev'>
       <div>
-      <span className='body'>{review.body}</span>
+      <span className='body'>Comment: {review.body}</span>
       </div>
       <div>
       <button onClick={handleDeleteClick} className="del">Delete</button>

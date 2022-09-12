@@ -50,7 +50,7 @@ function Home() {
             </div>
           </div>
           <div>
-            <p className='btm-footer' style={{textAlign:"center", fontWeight: "700"}}>Copyright@ReelWorldFurnitures. All rights reserved.</p>
+            <p className='btm-footer' style={{textAlign:"center", fontWeight: "700"}}>Copyright@ReelWorldHotel. All rights reserved.</p>
           </div>
     </div>
     )
