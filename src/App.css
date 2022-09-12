@@ -1,3 +1,8 @@
+*{
+
+    box-sizing: border-box;
+}
+
 .nav{
     border-bottom: solid;
     border-bottom-color: transparent;
@@ -16,6 +21,27 @@
     font-size: x-large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 50px;
+}
+
+.service1{
+    padding: 2rem;
+    border-radius: 3px;
+    background: grey;
+    margin-right: 2rem;
+}
+
+.service2{
+    padding: 2rem;
+    border-radius: 3px;
+    background: grey;
+    margin-right: 2rem;
+}
+
+.service3{
+    padding: 2rem;
+    border-radius: 3px;
+    background: grey;
+    margin-right: 2rem;
 }
 
 .del{
