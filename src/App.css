@@ -108,6 +108,6 @@
     border-top-color: green;
     border-bottom-color: transparent;
     background: rgb(180, 141, 216);
-    padding-bottom: 4rem;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
 }

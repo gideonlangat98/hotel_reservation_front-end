@@ -35,10 +35,19 @@ function Home() {
           </div>
           <div>
         </div>
-          <div className='footer'>
-            <h3>
-              My Footer
-            </h3>
+          <div className='footer' style={{display: "flex"}}>
+            <div style={{marginRight: "10rem", marginLeft: "4rem"}}>
+            <h3>Quick Links</h3>
+            <p>Home</p>
+            <p>Reviews</p>
+            <p>About us</p>
+            </div>
+
+            <div>
+            <h3>Contact Us</h3>
+            <p>Phone: +254701424534</p>
+            <p>gideonlangat98@gmail.com</p>
+            </div>
           </div>
           <div>
             <p className='btm-footer' style={{textAlign:"center", fontWeight: "700"}}>Copyright@ReelWorldFurnitures. All rights reserved.</p>

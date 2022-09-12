@@ -3,7 +3,7 @@ import about from '../images/about.jpg'
 
 function About() {
   return (
-    <div>
+    <div style={{marginBottom: "4rem"}}>
     <h2 style={{marginLeft: "8rem", color: "green"}}>About us</h2>
     <div style={{display: "flex"}}>
       
@@ -19,11 +19,6 @@ function About() {
       </div>
       <div>
       </div>
-      </div>
-      <div className='footer'>
-        <h3>
-          My Footer
-        </h3>
       </div>
     </div>
   )
