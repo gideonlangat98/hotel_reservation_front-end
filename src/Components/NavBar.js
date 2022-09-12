@@ -25,10 +25,6 @@ function NavBar(){
                 <NavLink to="aboutUs" style={navLinks}>
                     About us
                 </NavLink>
-
-                <NavLink to="rooms" style={navLinks}>
-                    Our Rooms
-                </NavLink>
             </div>
         </div>
     )
