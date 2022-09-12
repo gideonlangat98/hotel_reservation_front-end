@@ -7,6 +7,8 @@ import About from './Components/About';
 import CustomerReview from './Components/CustomerReview';
 import NewReview from './Components/NewReview';
 import Review from './Components/Review'
+import HotelForm from './Components/HotelForm';
+import Hotel from './Components/Hotel';
 
 function App() {
   return (
@@ -22,6 +24,10 @@ function App() {
         <Route exact path="/customerReviews">
         <CustomerReview />
         </Route>
+        <Route exact path="/rooms">
+        <HotelForm />
+        </Route>
+        <Hotel />
         <NewReview />
         <Review />
       </Switch>

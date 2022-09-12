@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import hotel from "../images/hotel1.jpg"
 import hotel2 from "../images/hotel2.jpg"
 
 
 function Home() {
-    const [hotels, setHotels] = useState([]);
-    
-    // useEffect(() => {
-    //   fetch("http://localhost:9292/hotels")
-    //   .then((response) => response.json())
-    //   .then((data) =>{
-    //     setHotels(data)
-    //     console.log(data)
-    //   })
-    // },[]);
     
     return (
       <div className='bg-page'>
@@ -26,22 +16,13 @@ function Home() {
           <img src={hotel} alt="hotel1" className="hotel1" style={{width: "850px", height: "600px", marginLeft: "3rem"}}/>
         </div>
         </div>
-          <header>
-            { hotels.map((hotel) => (
-                <ol id={hotel.id} key={hotel.id} >
-                <p>Name: {hotel.name}</p>
-                <p>Location:{hotel.location}</p>
-                <p>Price: {hotel.price}</p>
-                </ol>
-            ))}
-          </header>
           <div className='footer'>
             <h3>
               My Footer
             </h3>
           </div>
           <div>
-            <p>Copy</p>
+            <p className='btm-footer' style={{}}>Copyright@ReelWorldFurnitures. All rights reserved.</p>
           </div>
     </div>
     )

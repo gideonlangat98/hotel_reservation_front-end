@@ -11,10 +11,7 @@ function Review({review, onDelete}) {
       .then(() => onDelete(review));
   }
 
-  // function handleUpdateReview(updatedReview) {
-  //   setIsEditing(false);
-  //   onUpdateBody(updatedReview);
-  // }
+  
   return (
     <div className='rev'>
       <div>
